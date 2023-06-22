@@ -1,0 +1,748 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: #8dc140;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.7s;
+    padding: 20px 20px;
+    z-index: 10;
+}
+
+.modo-oscuro{
+    background-color: #000;
+    color: #fff;
+}
+
+.titulo-logo h1{
+    color: white;
+    font-weight: bold;
+}
+
+.titulo-logo p{
+    color: #565555;
+    font-weight: bold;
+}
+
+header.abajo{
+    background: #8dc140;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    height: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    padding-right: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    background: #118015;
+    color:#ffffff;
+}
+
+.despliegue {
+    position: relative;
+}
+  
+.despliegue-contenido {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.despliegue-contenido a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.despliegue-contenido a:hover{
+    background: #118015;
+    color: #ffffff;
+}
+
+.despliegue:hover .despliegue-contenido {
+    display: block;
+}
+
+.slider{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.line{
+    position: relative;
+    top: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid #8dc140;
+    z-index: -1;
+}
+
+.menu-1{
+    display: block;
+    padding-top: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-1 h1{
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.historia{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.titulo{
+    padding-top: 80px;
+}
+
+.titulo h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.parrafos{
+    display: flex;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+}
+
+.primero{
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.segundo img{
+    border-radius: 20px;
+    border: 5px solid #8dc140;
+}
+
+.directora{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.titulo2{
+    padding-top: 80px;
+}
+
+.titulo2 h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.directora2 {
+    display: flex;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+}
+
+.directora2 img{
+    border-radius: 20px;
+    border: 5px solid #8dc140;
+}
+
+.parrafo1 {
+    padding-left: 30px;
+    text-align: justify;
+}
+
+/* Niveles de Educacion */
+
+.titulo3{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.titulo3 h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    color: #8dc140;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contenedor-padre {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenedor a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #8dc140;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    top: 350px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.contenedor a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor img{
+    border: 5px solid #8dc140;
+    border-radius: 10px;
+}
+
+/* Vision del colegio */
+
+.vision1{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.vision-titulo h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.vision-contenido{
+    display: flex;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+}
+
+.vision-contenido img{
+    border: 5px solid #8dc140;
+    border-radius: 10px;
+}
+
+.vision-contenido p{
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.line2{
+    position: relative;
+    top: 120px;
+    margin-left: 250px;
+    margin-right: 80px;
+    border: 2px solid #8dc140;
+    z-index: -1;
+}
+
+/* Mision del colegio */
+
+.Mision1{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.Mision-titulo h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 78%;
+}
+
+.Mision-contenido{
+    display: flex;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+}
+
+.Mision-contenido img{
+    border: 5px solid #8dc140;
+    border-radius: 10px;
+}
+
+.Mision-contenido p{
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.line3{
+    position: relative;
+    top: 120px;
+    margin-left: 80px;
+    margin-right: 280px;
+    border: 2px solid #8dc140;
+    z-index: -1;
+}
+
+/* Ideario Institucional */
+
+.ideario{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.ideario-titulo h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ideario-contenido{
+    display: flex;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+}
+
+.ideario-contenido img{
+    border: 5px solid #8dc140;
+    border-radius: 10px;
+}
+
+.ideario-contenido p{
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.line4{
+    position: relative;
+    top: 120px;
+    margin-left: 250px;
+    margin-right: 80px;
+    border: 2px solid #8dc140;
+    z-index: -1;
+}
+
+/*Equipo directivo */
+.directiva{
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.directiva h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    color: #8dc140;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+.contenedor-galeria {
+    width: 805px;
+    height: 320px;
+    overflow: hidden;
+    margin: 20px 100px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.contenedor-galeria ul {
+    width: 2000px;
+}
+
+.contenedor-galeria li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.contenedor-galeria ul:hover li {
+    width: 40px;
+    filter: brightness(50%);
+}
+
+.contenedor-galeria ul li:hover {
+    width: 640px;
+    filter: brightness(100%);
+}
+
+.contenedor-galeria li img {
+    display: block;
+    width: 640px;
+    height: 100%;
+}
+
+.titulo-imagen {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+    animation: cambia-color 10s linear infinite;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: 400% 400%;
+}
+
+@keyframes cambia-color {
+    0% {
+        background-position: 0%, 50%;
+    }
+    50% {
+        background-position: 100%, 50%;
+    }
+    100% {
+        background-position: 0%, 100%;
+    }
+}
+
+.titulo-imagen a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 19px;
+    text-shadow: 0 1px 2px #000;
+    transition: all 0.5s ease;
+}
+
+.contenedor-galeria ul li:hover .titulo-imagen {
+    top: 0%;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-imagen:hover a {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.titulo-imagen:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.menu-2{
+    display: block;
+    padding-top: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-2 h1{
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+/*Doc. Gestion 1 */
+.doc-1{
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.titulo-proyecto h1{
+    display: inline-block;
+    padding: 10px 50px;
+    color: #ffffff;
+    background: #8dc140;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*Ventana Emergente*/
+.ventana {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #413f3f;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.ventana #cerrar {
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    left: 515px;
+    top: 3px;
+}
+
+.ventana2{
+    display: flex;
+}
+
+.ventana2 img{
+    margin-top: 40px;
+    margin-left: 40px;
+    position: center;
+}
+
+.ventana-parrafo h1{
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ventana-parrafo p{
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 17px;
+}
+/*Al cargar la pagina*/
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation-duration: 3s;
+}
+
+.loader.fade-out {
+    top: -120%;
+}
+
+#overview{
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgba(159, 157, 157, 0.35);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+#overview h1, h2{
+    color: #8dc140;
+    font-weight: bold;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.contactanos{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.border{
+    padding-right: 100px;
+    display: inline-block;
+}
+
+.contactanos-informacion{
+    flex-direction: column;
+    text-align: left;
+}
+
+#ABL h4{
+    font-size: 17px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.flex img{
+    padding-right: 10px;
+}
+
+.img1{
+    width: 30px;
+    height: 30px;
+}
+
+.Registro{
+    display: inline-block;
+    padding: 40px 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    background: rgba(173, 243, 185, 0.8);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Registro h1{
+    padding-bottom: 20px;
+    color: #8dc140;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.formulario{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.parte2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30px;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#btnCrear{
+    padding: 10px;
+    background-color: #8dc140;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+
+#showDate{
+    position: relative;
+    text-align: center;
+    background: #288422;
+    color: white;
+    z-index: 10;
+}
